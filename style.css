@@ -2,20 +2,33 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;   
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Nunito', sans-serif;
     color: white;
 }
 
 :root {
     --shadow-text: 0 -1px 0 #ebb611, 0 1px 0 #111c20, 0 2px 0 #111c20, 0 3px 0 #111c20, 0 4px 0 #111c20, 0 5px 0 #111c20, 0 6px 0 #111c20, 0 7px 0 #111c20, 0 8px 0 #111c20, 0 9px 0 #111c20, 0 10px 0 #111c20, 0 11px 0 #111c20, 0 12px 0 #111c20, 0 13px 0 #111c20, 0 14px 0 #111c20, 0 15px 0 #111c20, 0 22px 30px rgba(0,0,0,0.9);
+    
     --shadow-text-2: 0 -1px 0 #ebb611, 0 1px 0 #111c20, 0 2px 0 #111c20, 0 3px 0 #111c20, 0 4px 0 #111c20, 0 6px 0 #111c20, 0 7px 0  rgba(0,0,0,0.9);
+
+    --color-1: #1f4a53;
+    --color-2: #edb80c;
+    --color-3: #0b1319;
+    --color-4: #ecdfcd;
+    --color-5: #0e191f;
+    --color-6: #273e42;
+
+
+    --transition-1: 0.3s ease-in-out;
 }
 
 body {
-    background-image: url(imgs/daniel0284_lone_man_in_his_twenties_in_an_empty_falling_city_ni_1c2ffbc7-f3d7-43b2-b082-588a913b1868.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    width: 100%;
+    background-color: var(--color-3);
+}
+
+ul {
+    list-style: none;
 }
 
 a {
@@ -24,25 +37,36 @@ a {
 
 header {
     width: 100%;
-    height: 100px;
+    height: 50px;
     display: flex;
     justify-content:space-around;
     align-items: center;
 }
 
-nav {
+nav ul{
     display: flex;
-    gap: 0.8em;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
 }
 
+nav ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 nav a {
+    color: var(--color-4);
     font-size: 1.2em;
+    padding: 6px;
 }
 
 nav a:hover{
-    color: #5f5df3; 
-    border-bottom: 1px solid #8f8df5;
-    transition: all 0.5s ease;
+    color: var(--color-2); 
+    border-bottom: 1px solid var(--color-2);
+    transition: var(--transition-1);
 }
 
 main {
@@ -53,37 +77,102 @@ main {
 }
 
 #introducao {
+    background-image: url(imgs/daniel0284_lone_man_in_his_twenties_in_an_empty_falling_city_ni_1c2ffbc7-f3d7-43b2-b082-588a913b1868.png);
+    background-size: cover;
+    background-origin: border-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
     min-height: 100vh;
     height: 100vh;
-    margin-top: 40px;
+    padding-top: 40px;
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
 .titulo {
+    margin-top: 1em;
     letter-spacing: 4px;
     font-size: 4em;
     font-family: 'Rubik Moonrocks', cursive;
-    color: #1f4a53; 
+    color: var(--color-1); 
     text-shadow: var(--shadow-text)
 }
 
 .sub-titulo{
-    color: #1f4a53; 
+    color: var(--color-1); 
     font-family: 'Rubik Moonrocks', cursive;
-    font-size: 2em;
+    font-size: 3em;
     letter-spacing: 8px;
     text-shadow: var(--shadow-text-2);
     margin-top: 1em;
 }
 
+
 #projetos {
-    background-color: #0b1319;
+    margin: 0 2em;
+    background-color: var(--color-3);
 }
 
+#projetos h3 {
+    color: var(--color-4);
+    padding: 20px 0;
+    font-size: 2.2em;
+    text-align: center;
+}
 
+.projetos-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
+.projetos-conteudos {
+    gap: 20px;
+    width: 90%;
+    height: 300px;
+    padding: 20px;
+    background-color: var(--color-5);
+    border-radius: 20px;
+    box-shadow: 2px -1px 2px 1px var(--color-6);
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.projetos-conteudos p {
+    color: var(--color-4);
+    width: 50%;
+    font-size: 1.1em;
+    line-height: 25px;
+}
+
+.projetos-conteudos img {
+    width: 40%;
+    height: 100%;
+    min-height: 100%;
+}
+
+.button-conteudo {
+    cursor: pointer;
+    width: 90px;
+    height: 50px;
+    background-color: var(--color-6);
+    border-radius: 20px;
+    border: 2px solid transparent;
+}
+
+.button-conteudo:hover {
+    transition: var(--transition-1);
+    background-color: var(--color-3);
+    border: 2px solid var(--color-6);
+}
+
+.button-conteudo a {
+    font-size: 1.2em;
+    color: var(--color-4);
+}
 
 
 
