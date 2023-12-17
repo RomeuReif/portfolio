@@ -7,9 +7,9 @@
 }
 
 :root {
-    --shadow-text: 0 -1px 0 #ebb611, 0 1px 0 #111c20, 0 2px 0 #111c20, 0 3px 0 #111c20, 0 4px 0 #111c20, 0 5px 0 #111c20, 0 6px 0 #111c20, 0 7px 0 #111c20, 0 8px 0 #111c20, 0 9px 0 #111c20, 0 10px 0 #111c20, 0 11px 0 #111c20, 0 12px 0 #111c20, 0 13px 0 #111c20, 0 14px 0 #111c20, 0 15px 0 #111c20, 0 22px 30px rgba(0,0,0,0.9);
+    --shadow-text: 0 -1px 0 #ebb611, 0 1px 0 #000, 0 2px 0 #000, 0 3px 0 #000, 0 4px 0 #000, 0 5px 0 #000, 0 6px 0 #000, 0 7px 0 #000, 0 8px 0 #000, 0 9px 0 #000, 0 10px 0 #000, 0 11px 0 #000, 0 12px 0 #000, 0 13px 0 #000, 0 14px 0 #000, 0 15px 0 #ebb611, 0 22px 30px rgba(0,0,0,0.9);
     
-    --shadow-text-2: 0 -1px 0 #ebb611, 0 1px 0 #111c20, 0 2px 0 #111c20, 0 3px 0 #111c20, 0 4px 0 #111c20, 0 6px 0 #111c20, 0 7px 0  rgba(0,0,0,0.9);
+    --shadow-text-2: 0 -1px 0 #ebb611, 0 1px 0 #000, 0 2px 0 #000, 0 3px 0 #000, 0 4px 0 #000, 0 6px 0 #000, 0 7px 0  rgba(0,0,0,0.9);
 
     --color-1: #1f4a53;
     --color-2: #edb80c;
@@ -100,7 +100,7 @@ main {
     text-shadow: var(--shadow-text)
 }
 
-.sub-titulo{
+.sub-titulo {
     color: var(--color-1); 
     font-family: 'Rubik Moonrocks', cursive;
     font-size: 3em;
@@ -115,9 +115,9 @@ main {
     background-color: var(--color-3);
 }
 
-#projetos h3 {
+.intertitulo {
     color: var(--color-4);
-    padding: 20px 0;
+    padding: 30px 0;
     font-size: 2.2em;
     text-align: center;
 }
@@ -149,6 +149,7 @@ main {
 }
 
 .projetos-conteudos img {
+    border-radius: 10px;
     width: 40%;
     height: 100%;
     min-height: 100%;
@@ -175,54 +176,68 @@ main {
 }
 
 
+#sobre-mim {
+    padding: 20px;
+    height: 100%;
+    margin: 0 2em;
+}
 
-.formulario {
+.sobre-container {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.sobre-conteudo {
+    padding: 20px;
+    width: 60%;
+    height: 100%;
+}
+
+.sobre-conteudo h5{
+    color: var(--color-4);
+    font-size: 2em;
+    padding: 10px;
+}
+
+.sobre-conteudo p {
+    color: var(--color-4);
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+.linguages {
+    color: var(--color-4);
+    gap: 20px;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px
+}
+
+.linguages img {
+    width: 50%;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+}
+
+.foto {
     width: 40%;
 }
 
-.formulario p {
-    margin-top: 1em;
-    font-weight: 500;
-    text-shadow: 1px 1px #000535
+.foto img {
+    width: 100%;
 }
 
-.formulario input {
-    margin-top: 10px;
-    text-transform: uppercase;
-    color: #000;
-    border: 1px solid #5250cc;
-    width: 50%;
-    padding: 6px;
-    border-radius: 8px 0px 0px 8px;
-    cursor: pointer;
-}
 
-input[type="email"]:focus {
-    box-shadow: 1px 1px 8px #5250cc;
-    outline: 3px solid transparent;
-    border: 2px solid #5250cc;
-}
-
-.formulario button {
-    font-size: 0.9em;
-    color: #fff598;
-    background: linear-gradient(to right,#5250cc 50%, #363491 50%);
-    background-position: right bottom;
-    background-size: 200% 100%;
-    transition: all 300ms ease-out;
-    cursor: pointer;
-    width: 15%;
-    padding: 6px;
-    border-radius: 0px 8px 8px 0px;
-    border: 0;
-    margin-left: -4px;
-}
-
-.formulario button:hover {
-    background-position: left bottom;
-   /* border: 1px solid #5250cc;
-    transition: 0.4s ease; */
-}
 
 
 
