@@ -111,6 +111,7 @@ main {
 
 
 #projetos {
+    padding: 20px 0;
     margin: 0 2em;
     background-color: var(--color-3);
 }
@@ -139,6 +140,7 @@ main {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .projetos-conteudos p {
@@ -230,16 +232,65 @@ main {
 }
 
 .foto {
+   
+    border-radius: 20px;
     width: 40%;
 }
 
 .foto img {
+    box-shadow: 2px -1px 2px 1px var(--color-6);
+    border-radius: 20px;
     width: 100%;
 }
 
+footer {
+    background-color: var(--color-5);
+    color: var(--color-4);
+    padding: 20px 0;
+    margin-top: 30px;
+}
 
+.rodape-conteudo {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 
+.rodape-section {
+    flex-basis: 25%; 
+    text-align: center;
+    margin-bottom: 20px;
+}
 
+.rodape-section h6 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.rodape-section p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.rodape-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.rodape-section a {
+    color: var(--color-4);
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.rodape-section.rodape-mensagem {
+    flex-basis: 100%;
+    margin-top: 40px;
+}
+
+.rodape-section.rodape-mensagem p {
+    font-style: italic;
+}
 
 /* Mobile */
 @media only screen and (max-width: 480px){
