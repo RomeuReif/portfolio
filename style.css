@@ -154,7 +154,6 @@ main {
     border-radius: 10px;
     width: 40%;
     height: 100%;
-    min-height: 100%;
 }
 
 .button-conteudo {
@@ -231,6 +230,10 @@ main {
     justify-self: center;
 }
 
+.center span {
+    color: var(--color-4);
+}
+
 .foto {
    
     border-radius: 20px;
@@ -245,7 +248,6 @@ main {
 
 footer {
     background-color: var(--color-5);
-    color: var(--color-4);
     padding: 20px 0;
     margin-top: 30px;
 }
@@ -263,11 +265,13 @@ footer {
 }
 
 .rodape-section h6 {
+    color: var(--color-4);
     font-size: 1.5em;
     margin-bottom: 10px;
 }
 
 .rodape-section p {
+    color: var(--color-4);
     font-size: 1rem;
     line-height: 1.5;
 }
@@ -283,6 +287,10 @@ footer {
     font-size: 1em;
 }
 
+.rodape-section a:hover {
+    color: var(--color-2);
+}
+
 .rodape-section.rodape-mensagem {
     flex-basis: 100%;
     margin-top: 40px;
@@ -293,10 +301,22 @@ footer {
 }
 
 /* Mobile */
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 330px) {
+    #sobre-mim {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+
+@media only screen and (max-width: 682px){
+
     body {
-        height: 130vh;
-        
+        width: 100%;
+    }
+
+    main {
+        width: 100%;
     }
 
     nav a {
@@ -304,17 +324,80 @@ footer {
     }
 
     #logo img {
-        width: 40px;
+        width: 30px;
     }
 
-    .formulario {
+    .titulo {
+        font-size: 3em;
+    }
+
+    .sub-titulo {
+        font-size: 2em;
+    }
+
+    .intertitulo {
+        font-size: 1.5em;
+    }
+
+    .projetos-conteudos {
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .projetos-conteudos img {
         width: 100%;
-        margin-bottom: 50px;
+        height: 40%;
+    }
+    
+    .projetos-conteudos p {
+        text-align: center;
+        font-size: 1em;
+        width: 100%;
+        line-height: 18px;
     }
 
-    .formulario button {
-        width: 20%;
+    .sobre-container {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
     }
+    
+    .sobre-conteudo {
+        width: 100%;
+    }
+
+    .sobre-conteudo p {
+        width: 100%;
+        font-size: 1.1em;
+    }
+
+    .linguages {
+        display: none;
+    }
+
+    .foto {
+        width: 60%;
+    }
+
+    .rodape-section {
+        flex-basis: 80%;
+    }
+
+    .rodape-section h6 {
+        width: 100%;
+    }
+
+    .rodape-section p {
+        padding: 0px 10px;
+        font-size: 0.8rem;
+    }
+    
+    
+    .rodape-conteudo {
+        width: 100%;
+    }
+
+
 }
 
 /* Tablet */
